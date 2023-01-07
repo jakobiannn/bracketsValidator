@@ -27,8 +27,7 @@ public class Validator {
         boolean potentialDecision = false;
         int i = 0;
         while (i < range.size() - 1) {
-            char currentChar = brackets.charAt(range.get(i));
-            if (LEFT_BRACKET == currentChar && RIGHT_BRACKET == brackets.charAt(range.get(i + 1))) {
+            if (LEFT_BRACKET == brackets.charAt(range.get(i)) && RIGHT_BRACKET == brackets.charAt(range.get(i + 1))) {
                 answer.add(range.get(i));
                 answer.add(range.get(i + 1));
                 range.remove(i);
